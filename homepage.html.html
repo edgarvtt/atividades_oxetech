@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine de Produtos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-black tracking-tight text-blue-600">OXETECH<span class="text-gray-900">STORE</span></a>
+            </div>
+            <nav class="flex space-x-4 md:space-x-8 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition-colors">Início</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Produtos</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Sobre</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r divide-y-2 from-blue-50 to-indigo-50 py-16 md:py-24 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-4">
+                O futuro da tecnologia está aqui
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                Explore nossa seleção exclusiva de dispositivos de última geração com descontos imperdíveis e frete grátis para todo o Brasil.
+            </p>
+            <a href="#produtos" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                Ver Ofertas
+            </a>
+        </div>
+    </section>
+
+    <main id="produtos" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center md:text-left">Produtos em Destaque</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div class="aspect-square bg-gray-100 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop&q=60" alt="Smartphone Premium" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Smartphone Premium X1</h3>
+                    <p class="text-gray-500 text-sm mb-4 flex-grow">Tela OLED de 6.7", 256GB de armazenamento e câmera tripla de 50MP.</p>
+                    <div class="mt-auto">
+                        <span class="block text-2xl font-black text-gray-900 mb-4">R$ 4.999,00</span>
+                        <button class="w-full bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div class="aspect-square bg-gray-100 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Fone de Ouvido Bluetooth" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fone Wireless ANC Noise</h3>
+                    <p class="text-gray-500 text-sm mb-4 flex-grow">Cancelamento ativo de ruído inteligente e bateria com autonomia de até 40 horas.</p>
+                    <div class="mt-auto">
+                        <span class="block text-2xl font-black text-gray-900 mb-4">R$ 899,00</span>
+                        <button class="w-full bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div class="aspect-square bg-gray-100 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60" alt="Smartwatch Sport" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Smartwatch Pro Watch</h3>
+                    <p class="text-gray-500 text-sm mb-4 flex-grow">Monitoramento de saúde cardíaca, GPS integrado e resistência à água até 50m.</p>
+                    <div class="mt-auto">
+                        <span class="block text-2xl font-black text-gray-900 mb-4">R$ 1.299,00</span>
+                        <button class="w-full bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2026 TECHSTORE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

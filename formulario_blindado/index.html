@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vitrine + Formulário</title>
+<link rel="stylesheet" type="text/css" href="/formulario_blindado/style.css"></head>
+
+<body>
+
+  <h1>Minha Vitrine</h1>
+
+  <!-- VITRINE -->
+  <section class="vitrine">
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?1">
+      <h3>Produto 1</h3>
+      <p>Descrição do produto.</p>
+      <span class="preco">R$ 99,90</span>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?2">
+      <h3>Produto 2</h3>
+      <p>Descrição do produto.</p>
+      <span class="preco">R$ 149,90</span>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?3">
+      <h3>Produto 3</h3>
+      <p>Descrição do produto.</p>
+      <span class="preco">R$ 79,90</span>
+    </div>
+
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="form-section">
+
+    <h2>Entre em Contato</h2>
+
+    <form id="formContato">
+
+      <input 
+        type="text" 
+        id="nome" 
+        placeholder="Digite seu nome"
+      />
+
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="Digite seu e-mail"
+      />
+
+      <textarea 
+        id="mensagem" 
+        placeholder="Digite sua mensagem">
+      </textarea>
+
+      <button type="submit" class="btn-enviar">
+        Enviar
+      </button>
+
+    </form>
+
+    <button id="mostrarContatos" class="btn-mostrar">
+      Mostrar Contatos Salvos
+    </button>
+
+    <button id="limparHistorico" class="btn-limpar">
+      Limpar Histórico
+    </button>
+
+    <div class="historico" id="historico"></div>
+<script src="/formulario_blindado/script.js"></script>
+  </section>
